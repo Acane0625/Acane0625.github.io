@@ -93,7 +93,6 @@
 <p>我们对于$ax+by = c$  类型的线性方程当且仅当$gcd(a,b)|c$ 时有解 </p>
 <p>求解方式可以通过下面的代码求解（拓展欧几里得）</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ax+by = gcd(a,b)</span></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">extend_gcd</span><span class="params">(<span class="type">long</span> <span class="type">long</span> a,<span class="type">long</span> <span class="type">long</span> b,<span class="type">long</span> <span class="type">long</span> &amp;x,<span class="type">long</span> <span class="type">long</span> &amp;y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a==<span class="number">0</span>&amp;&amp;b==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>) &#123;x = <span class="number">1</span>; y = <span class="number">0</span>; <span class="keyword">return</span> a;&#125;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> d = <span class="built_in">extend_gcd</span>(b,a%b,y,x);</span><br><span class="line">    y -= a/b*x;</span><br><span class="line">    <span class="keyword">return</span> d;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>设$g = gcd(a,m)$ 则</p>
 <ul>
 <li>如果g不整除c则此方程无解     </li>
@@ -107,7 +106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://acane0625.github.io/2022/06/22/test/" data-id="cl4rwjeje00006wmje9cx6jlp" class="article-share-link">Share</a>
+      <a data-url="https://acane0625.github.io/2022/06/22/test/" data-id="cl4s7n60r0001bomj70bg62th" class="article-share-link">Share</a>
       
       
     </footer>

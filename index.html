@@ -91,7 +91,6 @@
 <p>我们对于$ax+by = c$  类型的线性方程当且仅当$gcd(a,b)|c$ 时有解 </p>
 <p>求解方式可以通过下面的代码求解（拓展欧几里得）</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ax+by = gcd(a,b)</span></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">extend_gcd</span><span class="params">(<span class="type">long</span> <span class="type">long</span> a,<span class="type">long</span> <span class="type">long</span> b,<span class="type">long</span> <span class="type">long</span> &amp;x,<span class="type">long</span> <span class="type">long</span> &amp;y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a==<span class="number">0</span>&amp;&amp;b==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>) &#123;x = <span class="number">1</span>; y = <span class="number">0</span>; <span class="keyword">return</span> a;&#125;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> d = <span class="built_in">extend_gcd</span>(b,a%b,y,x);</span><br><span class="line">    y -= a/b*x;</span><br><span class="line">    <span class="keyword">return</span> d;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>设$g = gcd(a,m)$ 则</p>
 <ul>
 <li>如果g不整除c则此方程无解     </li>
@@ -105,7 +104,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://acane0625.github.io/2022/06/22/test/" data-id="cl4rwjeje00006wmje9cx6jlp" class="article-share-link">Share</a>
+      <a data-url="https://acane0625.github.io/2022/06/22/test/" data-id="cl4s7n60r0001bomj70bg62th" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,22 +138,18 @@
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://acane0625.github.io/2022/06/20/hello-world/" data-id="cl4rwcs1d0000psmj8wnnh4hj" class="article-share-link">Share</a>
+      <a data-url="https://acane0625.github.io/2022/06/20/hello-world/" data-id="cl4s7n60j0000bomj6b95e96k" class="article-share-link">Share</a>
       
       
     </footer>
